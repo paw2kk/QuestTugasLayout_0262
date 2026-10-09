@@ -43,5 +43,13 @@ fun HomeScreen(modifier: Modifier = Modifier) {
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(bottom = dimensionResource(R.dimen.header_bottom_padding))
         )
+        MahasiswaCard(
+            nama = R.string.name_bambang,
+            alamat = R.string.address_bambang,
+            warnaKartu = R.color.card_gray,
+            warnaAlamat = R.color.text_address_yellow,
+            fontNama = FontFamily.Cursive,
+            beratNama = FontWeight.Normal
+        )
 
 

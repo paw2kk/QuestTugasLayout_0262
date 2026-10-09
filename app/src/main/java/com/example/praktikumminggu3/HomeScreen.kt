@@ -104,4 +104,50 @@ fun MahasiswaCard(
             .padding(all = dimensionResource(R.dimen.card_spacing)),
         shape = RoundedCornerShape(dimensionResource(R.dimen.card_corner)),
         colors = CardDefaults.cardColors(containerColor = colorResource(warnaKartu))
-    )
+    ) {
+        Row(
+            modifier = Modifier.padding(
+                horizontal = dimensionResource(R.dimen.card_padding_horizontal),
+                vertical = dimensionResource(R.dimen.card_padding_vertical)
+            ),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Logo()
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(horizontal = dimensionResource(R.dimen.text_gap_horizontal))
+            ) {
+                Text(
+                    text = stringResource(nama),
+                    color = colorResource(R.color.text_on_card),
+                    fontFamily = fontNama,
+                    fontWeight = beratNama,
+                    fontSize = sp(R.dimen.text_name)
+                )
+                telepon?.let {
+                    Text(
+                        text = stringResource(it),
+                        color = colorResource(R.color.text_phone),
+                        fontSize = sp(R.dimen.text_detail)
+                    )
+                }
+                Text(
+                    text = stringResource(alamat),
+                    color = colorResource(warnaAlamat),
+                    fontSize = sp(R.dimen.text_detail)
+                )
+            }
+            Logo()
+        }
+    }
+}
+
+@Composable
+fun Logo() = Image(
+    painter = painterResource(R.drawable.logo_umy),
+    contentDescription = stringResource(R.string.cd_logo),
+    modifier = Modifier.size(dimensionResource(R.dimen.logo_size))
+)
+
+@Preview(showBackground = true)

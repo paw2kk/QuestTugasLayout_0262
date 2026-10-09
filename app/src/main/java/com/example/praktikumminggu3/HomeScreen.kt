@@ -149,5 +149,3 @@ fun Logo() = Image(
     contentDescription = stringResource(R.string.cd_logo),
     modifier = Modifier.size(dimensionResource(R.dimen.logo_size))
 )
-
-@Preview(showBackground = true)

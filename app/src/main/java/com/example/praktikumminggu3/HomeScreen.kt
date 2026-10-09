@@ -51,5 +51,12 @@ fun HomeScreen(modifier: Modifier = Modifier) {
             fontNama = FontFamily.Cursive,
             beratNama = FontWeight.Normal
         )
+        MahasiswaCard(
+            nama = R.string.name_gibran,
+            alamat = R.string.address_gibran,
+            warnaKartu = R.color.card_purple,
+            warnaAlamat = R.color.text_address_yellow,
+            telepon = R.string.phone_number
+        )
 
 

@@ -36,3 +36,12 @@ fun HomeScreen(modifier: Modifier = Modifier) {
             fontSize = sp(R.dimen.text_title),
             fontWeight = FontWeight.Bold
         )
+        Text(
+            text = stringResource(R.string.title_campus),
+            color = colorResource(R.color.text_primary),
+            fontSize = sp(R.dimen.text_subtitle),
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(bottom = dimensionResource(R.dimen.header_bottom_padding))
+        )
+
+

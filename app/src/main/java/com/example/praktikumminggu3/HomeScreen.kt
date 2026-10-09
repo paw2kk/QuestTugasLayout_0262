@@ -97,4 +97,11 @@ fun MahasiswaCard(
     @StringRes telepon: Int? = null,
     fontNama: FontFamily? = null,
     beratNama: FontWeight = FontWeight.Bold
-)
+){
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(all = dimensionResource(R.dimen.card_spacing)),
+        shape = RoundedCornerShape(dimensionResource(R.dimen.card_corner)),
+        colors = CardDefaults.cardColors(containerColor = colorResource(warnaKartu))
+    )

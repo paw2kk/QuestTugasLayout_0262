@@ -29,4 +29,10 @@ fun HomeScreen(modifier: Modifier = Modifier) {
             .background(colorResource(R.color.background_screen))
             .padding(top = dimensionResource(R.dimen.header_top_padding)),
         horizontalAlignment = Alignment.CenterHorizontally
-    )
+    ){
+        Text(
+            text = stringResource(R.string.title_main),
+            color = colorResource(R.color.text_primary),
+            fontSize = sp(R.dimen.text_title),
+            fontWeight = FontWeight.Bold
+        )

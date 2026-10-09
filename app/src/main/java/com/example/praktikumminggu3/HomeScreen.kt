@@ -88,7 +88,13 @@ fun HomeScreen(modifier: Modifier = Modifier) {
         }
     }
 }
-
-
-
-
+@Composable
+fun MahasiswaCard(
+    @StringRes nama: Int,
+    @StringRes alamat: Int,
+    @ColorRes warnaKartu: Int,
+    @ColorRes warnaAlamat: Int,
+    @StringRes telepon: Int? = null,
+    fontNama: FontFamily? = null,
+    beratNama: FontWeight = FontWeight.Bold
+)

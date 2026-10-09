@@ -72,6 +72,23 @@ fun HomeScreen(modifier: Modifier = Modifier) {
             warnaAlamat = R.color.text_address_white,
             telepon = R.string.phone_number
         )
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .weight(1f)
+        ) {
+            Text(
+                text = stringResource(R.string.footer_copyright),
+                color = colorResource(R.color.text_primary),
+                fontSize = sp(R.dimen.text_footer),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = dimensionResource(R.dimen.footer_padding))
+            )
+        }
+    }
+}
+
 
 
 

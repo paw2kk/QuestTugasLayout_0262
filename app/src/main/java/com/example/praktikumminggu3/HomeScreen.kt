@@ -58,5 +58,12 @@ fun HomeScreen(modifier: Modifier = Modifier) {
             warnaAlamat = R.color.text_address_yellow,
             telepon = R.string.phone_number
         )
+        MahasiswaCard(
+            nama = R.string.name_zhilal,
+            alamat = R.string.address_zhilal,
+            warnaKartu = R.color.card_blue,
+            warnaAlamat = R.color.text_address_white,
+            telepon = R.string.phone_number
+        )
 
 

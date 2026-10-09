@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PraktikumMinggu3</string>
+    <string name="title_main">Teknologi Informasi</string>
+    <string name="title_campus">Universitas Muhammadiyah Yogyakarta</string>
+    <string name="footer_copyright">Copyright, 2026</string>
+    <string name="cd_logo">Logo Universitas Muhammadiyah Yogyakarta</string>
+
 </resources>
